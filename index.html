@@ -1,0 +1,55 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Controle de branchs</title>
+	<link rel="stylesheet" type="text/css" href="lib/bootstrap/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="jumbotron">
+		<h3></h3>
+		<input class="form-control" type="text placeholder="Qual branch você está buscando?"/>
+		<table  class="table table-striped">
+			<tr>
+				<th></th>
+				<th><a href="" >Branch</a></th>
+				<th><a href="" >Origem</a></th>
+				<th>Status</th>
+				<th>Data de update</th>
+			</tr>
+			<tr>
+				<td><input type="checkbox"/></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</table>
+		<hr/>
+		<form name="branchForm">
+			<input class="form-control" type="text" name="branch" placeholder="branch"/>
+			<input class="form-control" type="text" name="origem" placeholder="Origem"/>
+			<select class="form-control" >
+				<option value="">Selecione uma status</option>
+			</select>
+		</form>
+
+		<div>
+			<div class="alert alert-danger">
+				Por favor, preencha o campo branch!
+			</div>
+			<div class="alert alert-danger">
+				O campo branch deve ter o formato seguindo o exemplo fase3/sprint10/cd-7898.
+			</div>
+		</div>
+
+		<div class="alert alert-danger">
+			Por favor, preencha o campo origem!
+		</div>
+		
+		<button class="btn btn-primary btn-block">Adicionar Branch</button>
+		<button class="btn btn-danger btn-block">Apagar Branchs</button>
+	</div>
+</body>
+</html>
+
